@@ -1,0 +1,15 @@
+<!-- <h4>Parent child concept</h4> -->
+<div class="box">
+<h4 style="text-align:center; margin-top: 0px;">Products</h4>
+<form>
+
+<input  type="text" #productname >
+<button class="btn btn-secondary" type="submit"  (click)="searchProduct(productname.value);productname.value='' ">Find</button>
+      </form>
+<ul >
+  <li *ngFor="let prod of products">{{prod.prodname}}</li>
+</ul>
+<!-- <button (click)="hide()">Show</button> -->
+<app-search [product]="productentered"></app-search>
+</div>
+

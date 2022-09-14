@@ -1,0 +1,15 @@
+ <div class="container">
+  <div class="row" >
+  <div class="col col-3 col-md-4 mt-4"*ngFor="let products of productdetails">
+    <div class="card" style="width: 18rem;" >
+      <img src="{{products.image}}" class="card-img-top"  height="250px "alt="...">
+      <div class="card-body">
+      <h5 class="card-title">{{products.pname}}</h5>
+      <div class="card-body">
+        <p class="card-text">{{products.pdescription}}</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
