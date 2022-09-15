@@ -1,0 +1,71 @@
+[
+  {
+    "pid":1,
+    "pname":"ZEEPKART",
+    "pdescription":"Embellished 3-piece Unstitched Dress Material",
+    "price":750,
+    "img":" assets/dressp.jpg"
+  },
+  {
+    "pid":2,
+    "pname":"BIBA",
+    "pdescription":"Floral Print Unstitched Dress Material",
+    "price":1799,
+    "img":"assets/biba.jpg "
+
+  },
+  {
+    "pid":3,
+    "pname":"READIPRINT FASHIONS",
+    "pdescription":"Embellished Semi-Stitched Anarkali Dress Material",
+    "price":3684,
+    "img":"assets/anarkali.jpg "
+
+  },
+  {
+    "pid":4,
+    "pname":"VERO MODA",
+    "pdescription":"Floral Print Round-Neck Jumpsuit",
+    "price":1350,
+    "img":"assets/j.jpg "
+
+  },
+  {
+    "pid":5,
+    "pname":"Ak fashion",
+    "pdescription":"Dress with Abstract Print",
+    "price":840,
+    "img":"assets/j11.jpg "
+
+  },
+  {
+    "pid":6,
+    "pname":"STYLESTONE",
+    "pdescription":"Leaf Print Jumpsuit with Ruffled Panels",
+    "price":810,
+    "img":"assets/j2.jpg "
+
+  },
+  {
+    "pid":7,
+    "pname":"LEVIS",
+    "pdescription":"Textured Round-Neck Pullover",
+    "price":1350,
+    "img":"assets/sh1.jpg "
+
+  },
+  {
+    "pid":8,
+    "pname":"AMERICAN EYE",
+    "pdescription":"Ribbed Turtleneck Cape",
+    "price":900,
+    "img":"assets/sh2.jpg "
+  },
+  {
+    "pid":9,
+    "pname":"FORT COLLINS",
+    "pdescription":"Padded Zip-Front Hooded Jacket",
+    "price":1884,
+    "img":"assets/sh3.jpg "
+  }
+]

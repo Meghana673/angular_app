@@ -1,15 +1,29 @@
  <div class="container">
   <div class="row" >
-  <div class="col col-3 col-md-4 mt-4"*ngFor="let products of productdetails">
-    <div class="card" style="width: 18rem;" >
-      <img src="{{products.image}}" class="card-img-top"  height="250px "alt="...">
-      <div class="card-body">
+  <div class="col col-3 col-md-4 mt-4 col-sm-4"*ngFor="let products of productdetails" [ngSwitch]="products.Status">
+    <div class="card" style="width: 18rem; height: 30rem;">
+
+      <img src="{{products.image}}" class="card-img-top"  height="260px" >
+      <div class="card-body" *ngSwitchCase="'In Stock'">
       <h5 class="card-title">{{products.pname}}</h5>
-      <div class="card-body">
-        <p class="card-text">{{products.pdescription}}</p>
-      </div>
+
+        <p class="card-text" [style.color]="'indigo'" [style.font-size.px]="'16'" [style.text-align]="'center'" [style.font-family]="'serif'">{{products.pdescription}}</p>
+        <p style="text-align: center;">{{products.price |currency:'INR'}}</p>
+        <div class="text-success" >{{products.Status}}</div>
+        <button type="button" class="btn btn-info " >Quick View</button>
+    </div>
+
+    <div class="card-body" *ngSwitchDefault>
+      <h5 class="card-title">{{products.pname}}</h5>
+
+        <p class="card-text" [style.color]="'indigo'" [style.font-size.px]="'16'" [style.text-align]="'center'" [style.font-family]="'serif'">{{products.pdescription}}</p>
+        <p style="text-align: center;">{{products.price |currency:'INR'}}</p>
+        <div class="text-danger" >{{products.Status}}</div>
+        <button type="button" class="btn btn-info" >Quick View</button>
     </div>
     </div>
   </div>
 </div>
 </div>
+
+

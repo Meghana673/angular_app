@@ -1,0 +1,13 @@
+.card-title{
+  color: darkblue;
+  text-align: center;
+}
+.card{
+  box-shadow: 8px 5px 5px gray;
+ border: 2px  black;
+ background-color:aliceblue
+}
+.btn-info{
+  border-radius: 20px;
+  float: right;
+}

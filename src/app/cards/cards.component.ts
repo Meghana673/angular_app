@@ -14,66 +14,76 @@ export class CardsComponent implements OnInit {
   productdetails=[
     {
     "pid":'001',
-    "image":"assets/hp.jpg",
-    "pname":"Laptop",
-    "pdescription":"11th gen core i3/8gb ram/512gb ssd",
+    "image":"assets/casual.jpg",
+    "price": 1500,
+    "pname":"Long casual dress",
+    "pdescription":"Casual Wear Western Maxi Dress Gown for Girl/Women/Ladies",
     "Status":"In Stock"
     },
     {
       "pid":'002',
-      "image":"assets/boat.jpg",
-      "pname":"Headphones",
-      "pdescription":"boAt Rockerz 518 Wireless Headphones",
-      "Status":"In Stock"
+      "image":"assets/hoody.jpg",
+      "price": 659,
+      "pname":"Hoody",
+      "pdescription":"Women's Teen Girls Cotton Full Sleeve Cat Printing Hoodie Sweatshirt",
+      "Status":"Out of Stock"
       },
+
       {
         "pid":'003',
-        "image":"assets/mouse.jpg",
-        "pname":"mouse",
-        "pdescription":"wireless mouse",
+        "image":"assets/sharara.jpg",
+        "price": 1800,
+        "pname":"Kurta set",
+        "pdescription":"Dark green embroidered sharara set with lime green dupatta",
         "Status":"Out of Stock"
         },
         {
           "pid":'004',
-          "image":"assets/kurta.jpg",
-          "pname":"Dress",
-          "pdescription":"Ptinted designer kurta",
+          "image":"assets/top3.jpg",
+          "price": 699,
+          "pname":"Top",
+          "pdescription":"Schiffli Embroidered Top with Puff Sleeves",
           "Status":"Out of Stock"
           },
           {
             "pid":'005',
             "image":"assets/bag.jpg",
+            "price": 840,
             "pname":"Handbag",
-            "pdescription":"Printed white and blue duffle bag",
+            "pdescription":"Printed white and blue duffle women bag",
             "Status":"Out of Stock"
             },
 
             {
               "pid":'006',
               "image":"assets/shoes.jpg",
+              "price": 999,
               "pname":"Shoes",
               "pdescription":"Sneakers for Men Casual Shoes for Men",
               "Status":"In Stock"
               },
               {
                 "pid":'007',
-                "image":"assets/pendrive.jpg",
-                "pname":"Sandisk",
-                "pdescription":"SanDisk Ultra Dual 64GB USB 3.0 OTG Pen Drive (Gold)",
+                "image":"assets/k1.jpg",
+                "price": 731,
+                "pname":"Aks Fashion",
+                "pdescription":"Floral Print Anarkali Kurta with Tie-Up",
                 "Status":"In Stock"
                 },
                 {
                   "pid":'008',
-                  "image":"assets/hoody.jpg",
-                  "pname":"Hoody",
-                  "pdescription":"Women's Teen Girls Cotton Full Sleeve Cat Printing Hoodie Sweatshirt",
-                  "Status":"Out of Stock"
+                  "image":"assets/k2.jpg",
+                  "price": 499,
+                  "pname":"Fusion",
+                  "pdescription":"Floral Print Sleeveless Flared Kurta",
+                  "Status":"In Stock"
                   },
                 {
                 "pid":'009',
-                "image":"assets/watch.jpg",
-                "pname":"Smart Watch",
-                "pdescription":"Blue Aluminium Case with Abyss Blue Sport Band - Regular",
+                "image":"assets/k3.jpg",
+                "price": 490,
+                "pname":"AVAASA",
+                "pdescription":"Micro Print Collar-Neck Straight Kurta",
                 "Status":"In Stock"
                 },
 
