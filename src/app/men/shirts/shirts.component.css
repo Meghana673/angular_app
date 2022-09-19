@@ -1,0 +1,16 @@
+.desc{
+  font-family: serif;
+  font-size: 15px;
+  color: indigo;
+  text-align: center;
+}
+.btn{
+  width:148px;
+  background-color: rgb(6, 6, 23);
+  color: white;
+
+}
+.btn:hover{
+  opacity: 0.8;
+}
+

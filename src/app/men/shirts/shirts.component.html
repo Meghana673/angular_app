@@ -1,0 +1,19 @@
+<div style="position: relative; float:right ; bottom:350px; left:220px;">
+ <div class="col col-2 " *ngFor="let s of shirts" style="margin-top: 30px;">
+  <div class="card h-10" style="height:400px">
+    <img [src]="s.img" class="card-img-top" height="200px">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">{{s.pname | uppercase}}</h5>
+      <div class="desc">
+        {{s.pdescription}}
+           <br>
+           {{s.price | currency:'INR'}}<br>
+           <app-counter ></app-counter>
+
+       </div>
+       <button class="btn"><i class="fa-thin fa-solid fa-heart"></i>&nbsp;&nbsp; Wishlist</button>
+    </div>
+</div>
+
+</div>
+</div>

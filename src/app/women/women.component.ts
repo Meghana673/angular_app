@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as prod_details from "../data/products.json";
+import * as product_details from "../data/products.json";
 
 @Component({
   selector: 'app-women',
@@ -12,9 +12,8 @@ export class WomenComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  products:any=(prod_details as any).default;
+  prod:any=(product_details as any).default;
 
 
-  
 
 }

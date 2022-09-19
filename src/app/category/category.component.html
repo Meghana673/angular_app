@@ -1,0 +1,6 @@
+<h2 class="h">CATEGORIES</h2>
+<div *ngFor="let v of variety" style="border:none;float:left;">
+  <!--Property Binding-->
+  <img [src]="v.img" class="typ">
+  <h4 style=" text-align: center;">{{v.pname}}</h4>
+</div>

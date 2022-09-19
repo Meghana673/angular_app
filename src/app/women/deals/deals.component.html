@@ -1,0 +1,29 @@
+
+<div tyle="border:none;">
+  <div class="row">
+      <div class="card col-lg-8" style="border: none; margin-top:20px;margin-left:90px;">
+          <div class="card-body col-lg-12">
+              <div class="row" style="margin-top:10px; border-style:solid;border-color:navy; border-radius:15px;">
+                  <div class="col-lg-4">
+                      <img [src]="product.img">
+                  </div>
+                  <div class="col-lg-7" style="margin-top:20px; float: right; margin-left: 32px;">
+                      <div class="ptitle" >
+                       {{product.pname | uppercase}}
+                          <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                          <hr> </div>
+
+                      <div [hidden]="productDetail" class="desc">
+                       {{product.pdescription}}
+                          <br>
+                          {{product.price | currency:'INR'}}
+                          <!-- <app-counter></app-counter> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+</div>

@@ -13,8 +13,9 @@ export class NavComponent implements OnInit {
   }
 
 
-hide(){
-
+sfun()
+{
+  alert('There is no such product');
 }
 
 }

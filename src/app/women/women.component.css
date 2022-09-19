@@ -1,0 +1,26 @@
+
+
+/* .prodimg{
+  width: 400px;
+  margin-left: 70px;
+} */
+.s{
+  position: absolute;
+            bottom: 20px;
+            left: 10px;
+}
+marquee{
+  text-shadow:2px 3px 3px rgba(251, 226, 3, 0.724);
+  color:rgb(4, 4, 4);
+  font-size: 28px;
+}
+.h:hover{
+  transform: scale(1.1);
+}
+.t{
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkslateblue;
+  text-align: center;
+  text-shadow: 2px 3px 5px indianred;
+}

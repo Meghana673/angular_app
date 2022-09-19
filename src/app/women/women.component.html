@@ -1,0 +1,99 @@
+<!-- <div class="container" *ngFor="let prod of products">
+  <div class="row" >
+    <div class="col col-lg-3">
+
+   </div>
+  <div class=" card col col-md-6">
+
+    <div class="card-body col-lg-12" style="width: 18rem; height: 30rem;" >
+ <div class="row">
+  <div class="col col-lg-5">
+      <img src="{{prod.img}}" class="card-img-top"  height="250px"  >
+</div>
+<div class="col-lg-7">
+      <div>{{prod.pname}}
+        <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+
+
+      </div>
+      <div [hidden]="productDetail">
+        <p class="card-text" [style.color]="'indigo'" [style.font-size.px]="'16'" [style.text-align]="'center'" [style.font-family]="'serif'">{{prod.pdescription}}</p>
+        <p style="text-align: center;">{{prod.price |currency:'INR'}}</p>
+
+        <button type="button" class="btn btn-info " >Quick View</button>
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+</div></div> -->
+
+
+<!--
+<marquee>Today's Deal</marquee>
+
+<div style="border:none;">
+    <div class="row">
+
+
+
+        <div class="col col-lg-3"> -->
+<!--
+            <img [src]="f.img" class="prodimg">
+            <h2 class="s">shirts</h2> -->
+
+            <!-- <div class="card" style="border: none;" class="h"> -->
+              <!-- <img [src]="img" class="card-img prodimg" alt="..."> -->
+              <!-- <div class="card-img-overlay">
+                <h5 class="card-title" style="margin-bottom: 0px;">Card title</h5>
+
+              </div>
+            </div>
+        </div>
+
+
+
+        <div class="card col-lg-7" style="border:none;">
+
+          <app-deals></app-deals>
+
+        </div>
+
+
+        <div class="col col-lg-3">
+
+
+
+<app-advertisement></app-advertisement> -->
+          <!-- <img [src]="f.img" class="prodimg"> -->
+
+        <!-- </div>
+    </div>
+    <iframe width="150" height="145" style="float:right ; margin-top: 0%;" src="https://www.youtube.com/embed/ZxKM3DCV2kE"></iframe>
+
+</div> -->
+<div style="margin-left:150px;margin-top: 20px;">
+  <app-wcategory></app-wcategory>
+</div>
+
+
+<div >
+  <div class="row">
+
+      <!--1st column-->
+      <div class="col col-lg-3">
+          <app-category></app-category>
+      </div>
+
+      <!--2nd column-->
+      <div class="card col-lg-6" style="border:none;margin-top: 30px;">
+        <h2 class="t">TOP SELLING</h2>
+          <app-deals [product]="productItem" *ngFor="let productItem of prod"> </app-deals>
+
+      </div>
+      <!--3rd column-->
+      <div class="col col-lg-3">
+          <app-advertisement></app-advertisement>
+      </div>
+  </div>
+</div>

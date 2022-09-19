@@ -20,16 +20,73 @@
   </button>
 </div>
 
-<div>
+<!-- <div>
     <h3>Welcome {{name}}</h3>
-    <!-- <img [src]="shop"> -->
+    <img [src]="shop">
     <form>
       <label>Enter your name  </label> &nbsp; &nbsp;
         <input type="text" name="names" [(ngModel)]="names">
       <p>You have entered {{names}}</p>
-</form>
+</form> -->
 
 <!-- <ul *ngIf="visible">
   <li *ngFor="let prod of products">{{prod.prodname}}</li>
 </ul>
 <button (click)="hide()">Show</button> -->
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col col-3">
+<div class="card" style="width: 18rem;">
+  <img src="assets/h1.jpg" class="card-img-top"height="380px" alt="...">
+  <div class="card-img-overlay">
+
+
+    <button  (click)="wfun()" class="btn  " >Women</button>
+  </div>
+</div>
+</div>
+<div class="col col-3">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/h2.jpg" class="card-img-top" height="380px"alt="...">
+    <div class="card-img-overlay">
+
+
+      <a href="#" class="btn " >Girls</a>
+    </div>
+  </div>
+  </div>
+  <div class="col col-3">
+    <div class="card" style="width: 18rem; ">
+      <img src="assets/h5.jpg" class="card-img-top"  height="380px" alt="...">
+      <div class="card-img-overlay">
+
+
+        <a href="#" class="btn " >Men</a>
+      </div>
+    </div>
+    </div>
+    <div class="col col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/h4.jpg" class="card-img-top" height="380px"alt="...">
+        <div class="card-img-overlay">
+
+
+          <a href="#" class="btn " >Boys</a>
+        </div>
+      </div>
+      </div>
+</div>
+</div>
+<br>
+<br>
+<h2 class="collect">Collections</h2><hr>
+<div style="margin-left:150px">
+  <app-wcategory></app-wcategory>
+</div>
+<br>
+<div style="margin-left:150px">
+  <app-mcategory></app-mcategory>
+</div>
+<br>
+<app-contact></app-contact>

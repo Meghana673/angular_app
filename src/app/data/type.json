@@ -1,0 +1,37 @@
+[
+  {
+    "pid":1,
+    "img":"assets/l7.jpg",
+    "pname":"Shirts"
+  },
+  {
+    "pid":2,
+    "img":"assets/l2.jpg",
+    "pname":"Co-ord sets"
+  },
+  {
+    "pid":3,
+    "img":"assets/l3.jpg",
+    "pname":"Dresses"
+  },
+  {
+    "pid":4,
+    "img":"assets/l4.jpg",
+    "pname":"Pajamas"
+  },
+  {
+    "pid":5,
+    "img":"assets/l5.jpg",
+    "pname":"All day pants"
+  },
+  {
+    "pid":6,
+    "img":"assets/l6.jpg",
+    "pname":"Tops"
+  },
+  {
+    "pid":7,
+    "img":"assets/l8.jpg",
+    "pname":"Kurtas"
+  }
+]

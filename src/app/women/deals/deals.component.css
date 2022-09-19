@@ -1,0 +1,20 @@
+img{
+  height:150px;
+  width:150px;
+  margin-left:8px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-radius:10px;
+}
+.desc{
+  font-family: serif;
+  text-align: center;
+  color: indigo;
+}
+.ptitle
+{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rebeccapurple;
+  font-weight: bold;
+}

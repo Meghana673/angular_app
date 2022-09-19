@@ -1,0 +1,23 @@
+.navbar-custom
+{
+  background-color: rgb(23, 23, 54);
+
+}
+.nav-link
+{
+  color: white;
+}
+.nav-link:hover{
+ color:thistle;
+}
+.navbar-brand{
+  color: white;
+  font-weight: bolder;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.btn-secondary{
+  background-color: rgb(48, 48, 96);
+}
+.btn-secondary:hover{
+  background-color: rgb(99, 99, 128);
+}

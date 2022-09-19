@@ -1,4 +1,25 @@
-img{
-    width:600px;
-    height: 350px;
+.btn{
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 2px;
+  text-align: center;
+  width: 18rem;
+  background-color:  black;
+  left:0px;
+  color: white;
+
+}
+.btn:hover{
+  background-color:rgb(72, 70, 70);
+}
+.i
+{
+
+    border-radius: 50%;
+
+}
+.collect
+{
+  text-align: center;
+  font-family:fantasy
 }
