@@ -14,6 +14,7 @@ export class CounterchildComponent implements OnInit {
   countLessThenOne=true;
   c=12;
 
+  quantity:number=1;
   PostValue(){
     this.countEmmitter.emit(this.counterValue);
   }

@@ -1,0 +1,40 @@
+[
+  {
+    "pid":1,
+    "pname":"LEE COOPER",
+    "pdescription":"Checked Slim Fit Shirt with collar",
+    "price":700,
+    "img":" assets/mj1.jpg"
+  },
+  {
+    "pid":2,
+    "pname":"IVOC",
+    "pdescription":"Striped Slim Fit Shirt with Curved Hemline",
+    "price":700,
+    "img":"assets/mj2.jpg "
+
+  },
+  {
+    "pid":3,
+    "pname":"NETPLAY",
+    "pdescription":"Floral Print Shirt with Spread Collar",
+    "price":390,
+    "img":"assets/mj3.jpg "
+
+  },
+  {
+    "pid":4,
+    "pname":"NETPLAY",
+    "pdescription":"Printed Shirt with Patch Pocket",
+    "price":315,
+    "img":"assets/MJ4.jpg "
+
+  },
+  {
+    "pid":5,
+    "pname":"KETCH",
+    "pdescription":"Checked Slim Fit Shirt with Patch Pocket",
+    "price":455,
+    "img":"assets/mj5.jpg "
+  }
+]

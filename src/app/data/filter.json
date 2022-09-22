@@ -1,0 +1,30 @@
+[
+
+  {
+    "phead":"Category",
+    "pdet1":"Shirts",
+    "pdet2":"Sweats & hood",
+    "pdet3":"Jackets & coats",
+    "pdet4":"Jeans"
+
+  },
+  {
+    "phead":"Price",
+    "pdet1":"Below Rs.500",
+    "pdet2":"Rs.500-1000",
+    "pdet3":"Rs.1001-1500 ",
+    "pdet4":"Rs.1501-2000"
+
+  },
+  {
+    "phead":"Brands",
+    "pdet1":"Puma",
+    "pdet2":"Fort Collins",
+    "pdet3":"ADIDAS",
+    "pdet4":"U.S. Polo Assn."
+
+  }
+
+]
+
+ 

@@ -1,0 +1,40 @@
+input {
+  width: 60%;
+  margin-left: 100px;
+
+}
+
+label {
+  margin-left: 100px;
+  color:midnightblue
+}
+
+form {
+  padding: 10px;
+  background-color: lavender;
+  margin-left: 360px;
+  margin-top: 60px;
+  width: 40%;
+  border-style: inset;
+
+  border-radius: 10px;
+  border-color: black;
+
+}
+/*
+form:hover {
+  color: rgb(174, 155, 11);
+  background-color: rgb(40, 40, 40);
+  transform:scale(1.2);
+
+} */
+
+button {
+  margin-left: 200px;
+
+}
+
+span {
+  width: 60%;
+  margin-left: 100px;
+}

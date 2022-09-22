@@ -1,0 +1,22 @@
+.container-fluid{
+  background-color:aliceblue;
+
+}
+img{
+  height:100px;
+  width:100px;
+}
+h3{
+  color:indigo;
+  font-size: 16px;
+}
+h2
+{
+  font-size: 21px;
+  color: mediumblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.co{
+  width: 70%;
+  margin-left: 200px;
+}

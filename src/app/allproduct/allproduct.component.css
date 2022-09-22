@@ -1,0 +1,28 @@
+.prodimg{
+  height:100px;
+  width:150px;
+  margin-left:100px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-radius:10px;
+
+}
+/* .table{
+  border: 2px;
+} */
+.navbar-dark{
+  margin-top: 20px;
+}
+.products{
+  width: 75%;
+ margin-left: 170px;
+}
+
+.btn-warning{
+  padding: 5px;
+
+}
+.btn-danger{
+margin-top: 12px;
+  padding: 5px;
+}

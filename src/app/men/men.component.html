@@ -41,20 +41,8 @@
         </div>
 
       </div>
-      <div>
-        <h5><span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>Brands</h5><hr>
-        <div [hidden]="productDetail" >
-          <input type="checkbox">&nbsp;
-        <label> Puma </label><br>
-        <input type="checkbox">&nbsp;
-        <label>Fort Collins</label><br>
-        <input type="checkbox">&nbsp;
-        <label>ADIDAS</label><br>
-        <input type="checkbox">&nbsp;
-        <label>U.S. Polo Assn.</label><br>
-        </div>
 
-      </div>
+      <!-- <app-types [type]="productItem" *ngFor="let productItem of filter"></app-types> -->
       <!-- <div>
         <h5><span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>Discount</h5><hr>
         <div [hidden]="productDetail" >
@@ -76,7 +64,7 @@
     </div>
 <div class="col col-2 mt-7" *ngFor="let c of cloth" >
       <div class="col " style="margin-top: 30px;">
-        <div class="card h-10" style="height:400px">
+        <div class="card h-10" style="height:420px">
           <img [src]="c.img" class="card-img-top" height="200px">
           <div class="card-body">
             <h5 class="card-title" style="text-align: center;">{{c.pname | uppercase}}</h5>
@@ -84,10 +72,13 @@
               {{c.pdescription}}
                  <br>
                  {{c.price | currency:'INR'}}<br>
-                 <app-counter ></app-counter>
+                 Quantity:
+                 <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;text-align: center;border-radius:10px;" min="1" max="25">
 
-             </div>
-             <button class="btn"><i class="fa-thin fa-solid fa-heart"></i>&nbsp;&nbsp; Wishlist</button>
+
+
+             </div><br>
+             <button class="btn" (click)="addToCart(c)"><i class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp; Add to Bag</button>
           </div>
       </div>
 
@@ -97,6 +88,57 @@
 
 
       </div>
+
+        <div class="row col">
+          <div class="col col-2" style="margin-top: 30px;">
+            <h5><span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>Brands</h5><hr>
+        <div [hidden]="productDetail" >
+          <input type="checkbox">&nbsp;
+        <label> Puma </label><br>
+        <input type="checkbox">&nbsp;
+        <label>Fort Collins</label><br>
+        <input type="checkbox">&nbsp;
+        <label>ADIDAS</label><br>
+        <input type="checkbox">&nbsp;
+        <label>U.S. Polo Assn.</label><br>
+        </div>
+
+        <h5><span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>Discount</h5><hr>
+        <div [hidden]="productDetail" >
+          <input type="checkbox">&nbsp;
+        <label>0-20%  </label><br>
+        <input type="checkbox">&nbsp;
+        <label>21-30% </label><br>
+        <input type="checkbox">&nbsp;
+        <label>31-40%</label><br>
+        <input type="checkbox">&nbsp;
+        <label>41-50%</label><br>
+        <input type="checkbox">&nbsp;
+        <label>51-80% </label><br>
+        </div>
+    </div>
+              <div class="col col-2 " *ngFor="let c of mprod" >
+                <div class="col " style="margin-top: 30px;">
+                  <div class="card h-10" style="height:420px">
+                    <img [src]="c.img" class="card-img-top" height="200px">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">{{c.pname | uppercase}}</h5>
+                      <div class="desc">
+                        {{c.pdescription}}
+                           <br>
+                           {{c.price | currency:'INR'}}<br>
+                           Quantity:
+                           <input type="number" name="quantity"  [(ngModel)]="quantity" style="width:50px;border-radius:10px ; text-align: center;" min="1" max="25">
+
+
+                       </div><br>
+                       <button class="btn" (click)="addToCart(c)"><i class="fa-thin fa-solid fa-heart"></i>&nbsp;&nbsp; Wishlist</button>
+                    </div>
+                </div>
+
+                </div></div>
+
+            </div>
       <!-- <div class="row">
         <app-shirts></app-shirts>
       </div> -->

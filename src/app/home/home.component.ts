@@ -25,6 +25,10 @@ wfun()
 {
   this.router.navigateByUrl('women');
 }
+mfun()
+{
+  this.router.navigateByUrl('men');
+}
 // products:any[]=[
 //   {
 //     prodname:"Shoes"

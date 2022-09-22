@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +23,11 @@ import { CounterchildComponent } from './counter/counterchild/counterchild.compo
 import { MenComponent } from './men/men.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShirtsComponent } from './men/shirts/shirts.component';
+import { TypesComponent } from './men/types/types.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { AllproductComponent } from './allproduct/allproduct.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
 
 
 
@@ -42,14 +50,21 @@ import { ShirtsComponent } from './men/shirts/shirts.component';
     CounterchildComponent,
     MenComponent,
     ContactComponent,
-    ShirtsComponent
+    ShirtsComponent,
+    TypesComponent,
+    RegisterComponent,
+    LoginComponent,
+    AllproductComponent,
+    CartItemsComponent
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

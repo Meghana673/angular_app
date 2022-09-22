@@ -15,9 +15,10 @@ export class CounterComponent implements OnInit {
 
   count:number=1;
 
- 
+
 
   receiveValue($event:number){
     this.count=$event;
   }
+  
 }

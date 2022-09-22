@@ -1,0 +1,191 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "pname": "READIPRINT FASHIONS",
+      "pdescription": "Embellished Semi-Stitched Anarkali Dress Material",
+      "price": 3684,
+      "img": "assets/anarkali.jpg "
+    },
+    {
+      "id": 4,
+      "pname": "VERO MODA",
+      "pdescription": "Floral Print Round-Neck Jumpsuit",
+      "price": 1350,
+      "img": "assets/j.jpg "
+    },
+    {
+      "id": 5,
+      "pname": "Ak fashion",
+      "pdescription": "Dress with Abstract Print",
+      "price": 840,
+      "img": "assets/j11.jpg "
+    },
+    {
+      "id": 6,
+      "pname": "STYLESTONE",
+      "pdescription": "Leaf Print Jumpsuit with Ruffled Panels",
+      "price": 810,
+      "img": "assets/j2.jpg "
+    },
+    {
+      "id": 7,
+      "pname": "LEVIS",
+      "pdescription": "Textured Round-Neck Pullover",
+      "price": 1350,
+      "img": "assets/sh1.jpg "
+    },
+    {
+      "id": 8,
+      "pname": "AMERICAN EYE",
+      "pdescription": "Ribbed Turtleneck Cape",
+      "price": 900,
+      "img": "assets/sh2.jpg "
+    },
+    {
+      "id": 9,
+      "pname": "FORT COLLINS",
+      "pdescription": "Padded Zip-Front Hooded Jacket",
+      "price": 1884,
+      "img": "assets/sh3.jpg "
+    },
+    {
+      "id": 12,
+      "pname": "FSAF",
+      "pdescription": "ED",
+      "price": "2313",
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/71QZ41xermL._AC._SR360,460.jpg"
+    },
+    {
+      "id": 13,
+      "pname": "Janyas",
+      "pdescription": "A-line Maxi Dress",
+      "price": "700",
+      "img": "https://assets.ajio.com/medias/sys_master/root/20210403/nSSV/6068b01af997dd7b6463b2c3/-1117Wx1400H-462051816-pink-MODEL.jpg"
+    },
+    {
+      "id": 14,
+      "pname": "ishin",
+      "pdescription": "Embellished Fit & Flare Dress",
+      "price": "1926",
+      "img": "https://assets.ajio.com/medias/sys_master/root/20220902/t7MQ/63111d1ef997dd1f8dd551fa/-473Wx593H-462636114-cream-MODEL.jpg"
+    }
+  ],
+  "users": [
+    {
+      "username": "neha",
+      "useremail": "neha@gmail.com",
+      "password": "neha123",
+      "mobile": "",
+      "id": 1
+    },
+    {
+      "username": "meghana",
+      "useremail": "meghana@gmail.com",
+      "password": "megha123",
+      "mobile": "",
+      "id": 2
+    },
+    {
+      "username": " sam",
+      "useremail": "sam@gmail.com",
+      "password": "566",
+      "mobile": "8764534866",
+      "id": 3
+    },
+    {
+      "username": " sam",
+      "useremail": "sam@gmail.com",
+      "password": "gggg",
+      "mobile": "8764534866",
+      "id": 4
+    },
+    {
+      "username": " ';;l",
+      "useremail": "jj",
+      "password": " kk",
+      "mobile": "2323111432",
+      "id": 5
+    },
+    {
+      "username": " sam",
+      "useremail": "a",
+      "password": " ",
+      "mobile": " ",
+      "id": 6
+    },
+    {
+      "username": " sam",
+      "useremail": " ",
+      "password": " ",
+      "mobile": " ",
+      "id": 7
+    },
+    {
+      "username": "",
+      "useremail": " ",
+      "password": "",
+      "mobile": "",
+      "id": 8
+    },
+    {
+      "username": " ",
+      "useremail": " ",
+      "password": " ",
+      "mobile": " ",
+      "id": 9
+    },
+    {
+      "username": " ",
+      "useremail": " ",
+      "password": " ",
+      "mobile": " ",
+      "id": 10
+    },
+    {
+      "username": "",
+      "useremail": " ",
+      "password": " ",
+      "mobile": " ",
+      "id": 11
+    }
+  ],
+  "cart": [
+    {
+      "pname": "CAMPUS SUTRA",
+      "pdescription": "Colourblock Hooded Sweatshirt",
+      "price": 950,
+      "img": "assets/ms4.jpg ",
+      "quantity": 3,
+      "id": 6
+    },
+    {
+      "pname": "GRIMELANGE",
+      "pdescription": "Graphic Print Oversized Hoodie",
+      "price": 1427,
+      "img": "assets/ms5.jpg ",
+      "quantity": 2,
+      "id": 7
+    },
+    {
+      "pname": "BESIMPLE",
+      "pdescription": "Camel Borg Zip Funnel Neck Sweatshirt",
+      "price": 1500,
+      "img": " assets/ms1.jpg",
+      "quantity": 1,
+      "id": 8
+    },
+    {
+      "pname": "BESIMPLE",
+      "pdescription": "Camel Borg Zip Funnel Neck Sweatshirt",
+      "price": 1500,
+      "img": " assets/ms1.jpg",
+      "quantity": 1,
+      "id": 9
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
