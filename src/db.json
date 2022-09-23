@@ -67,8 +67,15 @@
       "id": 14,
       "pname": "ishin",
       "pdescription": "Embellished Fit & Flare Dress",
-      "price": "1926",
+      "price": "1930",
       "img": "https://assets.ajio.com/medias/sys_master/root/20220902/t7MQ/63111d1ef997dd1f8dd551fa/-473Wx593H-462636114-cream-MODEL.jpg"
+    },
+    {
+      "id": 15,
+      "pname": "PRAKHYA",
+      "pdescription": "Floral Embroidered A-line Kurta Set with Dupatta",
+      "price": 1981,
+      "img": "https://assets.ajio.com/medias/sys_master/root/20220309/Rr8G/622891a1f997dd03e209815d/-473Wx593H-463971356-purple-MODEL.jpg "
     }
   ],
   "users": [

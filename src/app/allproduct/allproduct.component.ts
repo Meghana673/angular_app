@@ -23,9 +23,9 @@ export class AllproductComponent implements OnInit {
 
   ngOnInit(): void {
     this.formValue = this.formbuilder.group({
-      pname:['',[Validators.required]],
+      pname:['',[Validators.required,Validators.pattern('[A-Za-z]*')]],
       pdescription:['',[Validators.required]],
-      price:['',[Validators.required]],
+      price:['',[Validators.required,Validators.pattern('[0-9]*')]],
       img:['',[Validators.required]]
     })
 
@@ -33,7 +33,7 @@ export class AllproductComponent implements OnInit {
   }
 
    clickAddProduct(){
-    this.submitted = true;
+
 
     this.formValue.reset();
     this.showAdd = true;
@@ -44,10 +44,13 @@ export class AllproductComponent implements OnInit {
 
   postProductDetails(){
     this.submitted=true;
+     if (this.formValue.invalid) {
+      return ;}
     this.productModelObj.pname = this.formValue.value.pname;
     this.productModelObj.pdescription = this.formValue.value.pdescription;
     this.productModelObj.price = this.formValue.value.price;
     this.productModelObj.img = this.formValue.value.img;
+
 
     this.api.postProducts(this.productModelObj).subscribe(res=>{
       console.log(res);

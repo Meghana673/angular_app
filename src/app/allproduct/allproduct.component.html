@@ -51,23 +51,28 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form [formGroup]="formValue" (ngSubmit)="clickAddProduct()">
+        <form [formGroup]="formValue" >
           <div class="mb-3">
             <label class="form-label">Name</label>
             <input type="pname" class="form-control" formControlName="pname">
-            <label class="error ng-binding" *ngIf="submitted && f['pname'].errors?.['required']">Name is required</label>
+            <label class="error ng-binding" id="error" *ngIf="submitted && f['pname'].errors?.['required']">Name is required</label>
+            <label class="error ng-binding" id="error" *ngIf="submitted && f['pname'].errors?.['pattern']">Enter only alphabets</label>
           </div>
           <div class="mb-3">
             <label class="form-label">Description</label>
             <input type="pdescription" class="form-control" formControlName="pdescription" >
+            <label class="error ng-binding"  id="error" *ngIf="submitted && f['pdescription'].errors?.['required']">Product description is required</label>
           </div>
           <div class="mb-3">
             <label class="form-label">Price</label>
             <input type="price" class="form-control" formControlName="price">
+            <label class="error ng-binding"  id="error" *ngIf="submitted && f['price'].errors?.['required']">Price is required</label>
+            <label class="error ng-binding" id="error" *ngIf="submitted && f['price'].errors?.['pattern']">Only digits are allowed</label>
           </div>
           <div class="mb-3">
             <label class="form-label">Image</label>
             <input type="img" class="form-control" formControlName="img">
+            <label class="error ng-binding"  id="error" *ngIf="submitted && f['img'].errors?.['required']">Image is required</label>
           </div>
         </form>
       </div>

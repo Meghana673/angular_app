@@ -4,7 +4,7 @@ input {
 }
 
 label {
-  margin-left: 50px;
+  margin-left: 20px;
   color:midnightblue
 }
 
@@ -41,4 +41,7 @@ span {
 
 h4{
   margin-left: 600px;
+}
+#error{
+  color: red;
 }
