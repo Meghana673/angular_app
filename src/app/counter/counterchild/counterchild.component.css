@@ -9,7 +9,8 @@ input{
   font-size: 13px;
 }
 .bt{
-  margin-left: 25px;
+  margin-left: 0px;
   position: relative;
+  left: 28px;
 
 }

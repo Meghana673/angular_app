@@ -5,7 +5,7 @@ input {
 
 label {
   margin-left: 20px;
-  color:midnightblue
+  color:midnightblue;
 }
 
 form {
@@ -15,7 +15,7 @@ form {
   margin-top: 100px;
   width: 50%;
   border-style: inset;
-
+  box-shadow: 5px 5px 5px darkslategrey;
   border-radius: 10px;
   border-color: black;
 
@@ -44,4 +44,7 @@ h4{
 }
 #error{
   color: red;
+}
+.btn:hover{
+opacity: 0.8;
 }

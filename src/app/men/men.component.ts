@@ -52,7 +52,7 @@ export class MenComponent implements OnInit {
       toast: true,
       position: 'top',
       showConfirmButton: false,
-      timer: 3000,
+      timer: 2000,
       timerProgressBar: true,
     })
 
@@ -80,6 +80,13 @@ export class MenComponent implements OnInit {
       content='fa fa-minus';
     }
     return content;
+  }
+  count:number=1;
+
+
+
+  receiveValue($event:number){
+    this.quantity=$event;
   }
 
 

@@ -3,7 +3,8 @@
   <br>
   <h1 style="color:darkblue;text-align: center;">Your total amount is {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1>
 <br><br>
-  <div class="row header"   >
+<div class="box">
+  <div class="row header c"   >
     <div class="col-sm" >
       <h2 >Product Image</h2>
     </div>
@@ -22,7 +23,7 @@
   </div>
   <hr>
   <div class="container" *ngFor="let item of cart">
-    <div class="row">
+    <div class="row c">
       <div class="col-sm">
         <img src={{item.img}}>
       </div>
@@ -37,7 +38,7 @@
       </div>
       <div class="col-sm">
         <div>{{item.totalPrice}}</div>
-        <button class="btn btn-danger " (click)="delete(item)"><i class="fa-solid fa-trash"></i></button>
+        <button class="btn btn-secondary " (click)="delete(item)"><i class="fa-solid fa-trash"></i></button>
       </div>
     </div>
     <hr>
@@ -45,16 +46,14 @@
   <div class="row">
     <div class="col-lg-7">
       <a class="btn btn-dark m-3" (click)="onClick()">Shop More</a>
-      <a class="btn btn-dark m-3" href="https://rzp.io/i/kzB2lbne" style="float: right; position: relative; left: 350px;" target="_blank" >CheckOut</a>
+      <a class="btn btn-dark m-3" href="https://rzp.io/i/kzB2lbne" style="float: right; position: relative; left: 350px;" target="_blank" >Pay Now</a>
     </div>
     <div class="col-lg-5">
       <div>
         <h3>Total: {{totalPrice(cart)|currency:'INR'}}</h3>
       </div>
     </div>
-    <div class="col" >
-
-    </div>
+  </div>
 
   </div>
 </div>

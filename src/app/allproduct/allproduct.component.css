@@ -20,7 +20,8 @@
 
 .btn-warning{
   padding: 5px;
-
+  background-color: rgb(27, 126, 126);
+  border-color: steelblue;
 }
 .btn-danger{
 margin-top: 12px;
@@ -28,4 +29,10 @@ margin-top: 12px;
 }
 #error{
   color:red;
+}
+.btn-primary{
+  background-color: slateblue;
+}
+.u{
+  background-color: royalblue;
 }

@@ -7,7 +7,27 @@
  border: 2px  black;
  background-color:aliceblue
 }
+.card:hover{
+  /* transform: translate(2px,2px); */
+  transform: scale(1.1,0.9);
+}
 .btn-info{
   border-radius: 20px;
   float: right;
 }
+.alert
+{
+  padding: 3px;
+  text-align: center;
+}
+.btn{
+  width:148px;
+  background-color: rgb(29, 29, 93);
+  color: white;
+  margin-left: 40px;
+
+}
+.btn:hover{
+  opacity: 0.8;
+}
+

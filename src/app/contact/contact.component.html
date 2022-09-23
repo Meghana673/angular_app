@@ -5,11 +5,12 @@
     <div class="col col-4"*ngFor="let c of cont">
   <div class="card  border-secondary mb-3" style="max-width: 18rem;" >
     <div class="card-header" style="color: black; text-align: center;font-weight: bold;">{{c.branch}}</div>
-    <div class="card-body text-secondary">
-        {{c.mail}}<br>
-        {{c.mobile}}<br>
+    <div class="card-body text-secondary" style="margin-left:10px;">
+      <i class="fa-solid fa-envelope"></i> &nbsp;{{c.mail}}<br>
+      <i class="fa-solid fa-phone"></i>&nbsp;{{c.mobile}}<br>
 
-      <p class="card-text"> {{c.address}}</p>
+      <p class="card-text">
+        <i class="fa-solid fa-address-card"></i>&nbsp; {{c.address}}</p>
     </div>
   </div>
 </div>

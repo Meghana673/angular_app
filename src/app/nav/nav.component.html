@@ -37,7 +37,7 @@
 
         </ul>
         <button routerLink='cart' style="border:none;" *ngIf="auth" >
-          <span class="fa-solid fa-bag-shopping" style="font-size:20px; "><sup class="text-dark" style="font-size: 11px;">{{cartCount}}</sup></span>
+          <span class="fa-solid fa-bag-shopping" style="font-size:20px; "><sup class="text-dark" style="font-size: 11px; margin-left: 2px; color: blue;">{{cartCount}}</sup></span>
         </button> &nbsp;&nbsp;&nbsp;
         <form class="d-flex" *ngIf="!auth">
           <input class="form-control me-2" type="search" #productname placeholder="Search" aria-label="Search">

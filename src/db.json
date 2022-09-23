@@ -76,6 +76,13 @@
       "pdescription": "Floral Embroidered A-line Kurta Set with Dupatta",
       "price": 1981,
       "img": "https://assets.ajio.com/medias/sys_master/root/20220309/Rr8G/622891a1f997dd03e209815d/-473Wx593H-463971356-purple-MODEL.jpg "
+    },
+    {
+      "id": 16,
+      "pname": "ss",
+      "pdescription": "sss",
+      "price": "222",
+      "img": "\"ff\""
     }
   ],
   "users": [
@@ -106,55 +113,6 @@
       "password": "gggg",
       "mobile": "8764534866",
       "id": 4
-    },
-    {
-      "username": " ';;l",
-      "useremail": "jj",
-      "password": " kk",
-      "mobile": "2323111432",
-      "id": 5
-    },
-    {
-      "username": " sam",
-      "useremail": "a",
-      "password": " ",
-      "mobile": " ",
-      "id": 6
-    },
-    {
-      "username": " sam",
-      "useremail": " ",
-      "password": " ",
-      "mobile": " ",
-      "id": 7
-    },
-    {
-      "username": "",
-      "useremail": " ",
-      "password": "",
-      "mobile": "",
-      "id": 8
-    },
-    {
-      "username": " ",
-      "useremail": " ",
-      "password": " ",
-      "mobile": " ",
-      "id": 9
-    },
-    {
-      "username": " ",
-      "useremail": " ",
-      "password": " ",
-      "mobile": " ",
-      "id": 10
-    },
-    {
-      "username": "",
-      "useremail": " ",
-      "password": " ",
-      "mobile": " ",
-      "id": 11
     }
   ],
   "cart": [
@@ -183,12 +141,20 @@
       "id": 8
     },
     {
-      "pname": "BESIMPLE",
-      "pdescription": "Camel Borg Zip Funnel Neck Sweatshirt",
-      "price": 1500,
-      "img": " assets/ms1.jpg",
-      "quantity": 1,
-      "id": 9
+      "pname": "LEE COOPER",
+      "pdescription": "Checked Slim Fit Shirt with collar",
+      "price": 700,
+      "img": " assets/mj1.jpg",
+      "quantity": 5,
+      "id": 11
+    },
+    {
+      "pname": "IVOC",
+      "pdescription": "Striped Slim Fit Shirt with Curved Hemline",
+      "price": 700,
+      "img": "assets/mj2.jpg ",
+      "quantity": 4,
+      "id": 12
     }
   ],
   "comments": [],

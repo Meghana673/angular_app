@@ -78,50 +78,50 @@ export class LoginComponent implements OnInit {
         const user=res.find((a:any)=>{
           return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
         });
-        if(user){
-          alert("login successful!!");
-          this.loginForm.reset();
-          this.router.navigate([' '])
-          this.userService.validateAuth(true);
-        }else{
-          alert("user not found !!");
-          this.userService.validateAuth(false);
-        }
-      })
+      //   if(user){
+      //     alert("login successful!!");
+      //     this.loginForm.reset();
+      //     this.router.navigate([' '])
+      //     this.userService.validateAuth(true);
+      //   }else{
+      //     alert("user not found !!");
+      //     this.userService.validateAuth(false);
+      //   }
+      // })
+      // }
+
+      if(user){
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top',
+          showConfirmButton: false,
+          timer: 1000,
+          timerProgressBar: true,
+        })
+
+        Toast.fire({
+          icon: 'success',
+          title: 'Login Successful'
+        })
+        this.loginForm.reset();
+        this.router.navigate([''])
+        this.userService.validateAuth(true);
+      }else{
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        })
+
+        Toast.fire({
+          icon: 'error',
+          title: 'User not found'
+        })
+        this.userService.validateAuth(false);
       }
-
-  //     if(user){
-  //       const Toast = Swal.mixin({
-  //         toast: true,
-  //         position: 'top',
-  //         showConfirmButton: false,
-  //         timer: 3000,
-  //         timerProgressBar: true,
-  //       })
-
-  //       Toast.fire({
-  //         icon: 'success',
-  //         title: 'Login Successful'
-  //       })
-  //       this.loginForm.reset();
-  //       this.router.navigate([''])
-  //       this.userService.validateAuth(true);
-  //     }else{
-  //       const Toast = Swal.mixin({
-  //         toast: true,
-  //         position: 'top',
-  //         showConfirmButton: false,
-  //         timer: 3000,
-  //         timerProgressBar: true,
-  //       })
-
-  //       Toast.fire({
-  //         icon: 'error',
-  //         title: 'User not found'
-  //       })
-  //       this.userService.validateAuth(false);
-  //     }
-  //   })
-  // }
+    })
+  }
     }
 

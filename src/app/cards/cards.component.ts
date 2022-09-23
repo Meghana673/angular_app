@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
+import { CartService } from '../cart.service';
+import { Cartitem } from '../cartitem';
 
 @Component({
   selector: 'app-cards',
@@ -7,14 +10,51 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartsvc:CartService) { }
 
   ngOnInit(): void {
   }
+  cart:Cartitem={
+    pid:0,
+    pname:'',
+    pdescription:'',
+    price:0,
+    img:'',
+    quantity:1,
+    totalPrice:1
+  }
+  quantity:number=1;
+  addToCart(product:any){
+    this.cart.pname=product.pname;
+    this.cart.pdescription=product.pdescription;
+    this.cart.price=product.price;
+    this.cart.img=product.img;
+    this.cart.price=product.price;
+    this.cart.totalPrice=product.totalPrice;
+    this.cart.quantity=this.quantity;
+    this.cart.pid=product.id;
+    this.cartsvc.addToCart(this.cart);
+    console.log(product.id);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Item added successfully'
+    })
+    this.cartsvc.getCount();
+  }
+
+
   productdetails=[
     {
     "pid":'001',
-    "image":"assets/casual.jpg",
+    "img":"assets/casual.jpg",
     "price": 1500,
     "pname":"Long casual dress",
     "pdescription":"Casual Wear Western Maxi Dress Gown for Girl/Women/Ladies",
@@ -22,16 +62,16 @@ export class CardsComponent implements OnInit {
     },
     {
       "pid":'002',
-      "image":"assets/hoody.jpg",
+      "img":"assets/hoody.jpg",
       "price": 659,
       "pname":"Hoody",
-      "pdescription":"Women's Teen Girls Cotton Full Sleeve Cat Printing Hoodie Sweatshirt",
+      "pdescription":"Women's  Cotton Full Sleeve Cat Printing Hoodie Sweatshirt",
       "Status":"Out of Stock"
       },
 
       {
         "pid":'003',
-        "image":"assets/sharara.jpg",
+        "img":"assets/sharara.jpg",
         "price": 1800,
         "pname":"Kurta set",
         "pdescription":"Dark green embroidered sharara set with lime green dupatta",
@@ -39,7 +79,7 @@ export class CardsComponent implements OnInit {
         },
         {
           "pid":'004',
-          "image":"assets/top3.jpg",
+          "img":"assets/top3.jpg",
           "price": 699,
           "pname":"Top",
           "pdescription":"Schiffli Embroidered Top with Puff Sleeves",
@@ -47,7 +87,7 @@ export class CardsComponent implements OnInit {
           },
           {
             "pid":'005',
-            "image":"assets/bag.jpg",
+            "img":"assets/bag.jpg",
             "price": 840,
             "pname":"Handbag",
             "pdescription":"Printed white and blue duffle women bag",
@@ -56,7 +96,7 @@ export class CardsComponent implements OnInit {
 
             {
               "pid":'006',
-              "image":"assets/shoes.jpg",
+              "img":"assets/shoes.jpg",
               "price": 999,
               "pname":"Shoes",
               "pdescription":"Sneakers for Men Casual Shoes for Men",
@@ -64,7 +104,7 @@ export class CardsComponent implements OnInit {
               },
               {
                 "pid":'007',
-                "image":"assets/k1.jpg",
+                "img":"assets/k1.jpg",
                 "price": 731,
                 "pname":"Aks Fashion",
                 "pdescription":"Floral Print Anarkali Kurta with Tie-Up",
@@ -72,7 +112,7 @@ export class CardsComponent implements OnInit {
                 },
                 {
                   "pid":'008',
-                  "image":"assets/k2.jpg",
+                  "img":"assets/k2.jpg",
                   "price": 499,
                   "pname":"Fusion",
                   "pdescription":"Floral Print Sleeveless Flared Kurta",
@@ -80,7 +120,7 @@ export class CardsComponent implements OnInit {
                   },
                 {
                 "pid":'009',
-                "image":"assets/k3.jpg",
+                "img":"assets/k3.jpg",
                 "price": 490,
                 "pname":"AVAASA",
                 "pdescription":"Micro Print Collar-Neck Straight Kurta",

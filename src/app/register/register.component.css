@@ -16,7 +16,7 @@ form {
   margin-top: 60px;
   width: 40%;
   border-style: inset;
-
+  box-shadow: 5px 5px 5px darkslategrey;
   border-radius: 10px;
   border-color: black;
 
@@ -37,4 +37,10 @@ button {
 span {
   width: 60%;
   margin-left: 100px;
+}
+#error{
+  color: red;
+}
+.btn:hover{
+  opacity: 0.8;
 }

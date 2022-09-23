@@ -1,16 +1,18 @@
  <div class="container">
   <div class="row" >
   <div class="col col-3 col-md-4 mt-4 col-sm-4"*ngFor="let products of productdetails" [ngSwitch]="products.Status">
-    <div class="card" style="width: 18rem; height: 30rem;">
+    <div class="card" style="width: 16rem; height: 32rem;">
 
-      <img src="{{products.image}}" class="card-img-top"  height="260px" >
+      <img src="{{products.img}}" class="card-img-top"  height="260px" >
       <div class="card-body" *ngSwitchCase="'In Stock'">
       <h5 class="card-title">{{products.pname}}</h5>
 
         <p class="card-text" [style.color]="'indigo'" [style.font-size.px]="'16'" [style.text-align]="'center'" [style.font-family]="'serif'">{{products.pdescription}}</p>
         <p style="text-align: center;">{{products.price |currency:'INR'}}</p>
-        <div class="text-success" >{{products.Status}}</div>
-        <button type="button" class="btn btn-info " >Quick View</button>
+        <div class="alert alert-success" role="alert">
+          {{products.Status}}</div>
+        <!-- <button type="button" class="btn btn-info " >Quick View</button> -->
+        <button class="btn" (click)="addToCart(products)"><i class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp; Add to Bag</button>
     </div>
 
     <div class="card-body" *ngSwitchDefault>
@@ -18,8 +20,9 @@
 
         <p class="card-text" [style.color]="'indigo'" [style.font-size.px]="'16'" [style.text-align]="'center'" [style.font-family]="'serif'">{{products.pdescription}}</p>
         <p style="text-align: center;">{{products.price |currency:'INR'}}</p>
-        <div class="text-danger" >{{products.Status}}</div>
-        <button type="button" class="btn btn-info" >Quick View</button>
+        <div class="alert alert-danger" role="alert">{{products.Status}}</div>
+        <!-- <button type="button" class="btn btn-info" >Quick View</button> -->
+        <button class="btn" (click)="addToCart(products)"><i class="fa-thin fa-solid fa-heart"></i>&nbsp;&nbsp; Wishlist</button>
     </div>
     </div>
   </div>

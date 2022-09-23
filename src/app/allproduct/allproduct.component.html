@@ -23,7 +23,7 @@
       <th scope="col">Action</th>
     </tr>
   </thead>
-  <tbody style="text-align: center; background-color: azure;">
+  <tbody style="text-align: center; background-color:honeydew">
     <tr *ngFor="let product of productData">
       <td>{{product.id}}</td>
       <td>{{product.pname | uppercase}}</td>
@@ -77,9 +77,9 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" *ngIf="showAdd" (click)="postProductDetails()" class="btn btn-primary">Add</button>
-        <button type="button" *ngIf="showUpdate" (click)="updateProductDetails()" class="btn btn-warning">Update</button>
+        <button type="button" id="cancel" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" *ngIf="showAdd" (click)="postProductDetails()" class="btn btn-primary ">Add</button>
+        <button type="button" *ngIf="showUpdate" (click)="updateProductDetails()" class="btn btn-warning u">Update</button>
       </div>
     </div>
   </div>

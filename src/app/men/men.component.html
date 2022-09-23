@@ -72,10 +72,15 @@
               {{c.pdescription}}
                  <br>
                  {{c.price | currency:'INR'}}<br>
-                 Quantity:
-                 <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;text-align: center;border-radius:10px;" min="1" max="25">
+                 <!-- Quantity:
+                 <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;text-align: center;border-radius:10px;" min="1" max="25"> -->
+
+                 <div>
+                  <p style="float: left; position:absolute;"> Quantity :</p>
+                  <app-counterchild (countEmmitter)="receiveValue($event)"></app-counterchild>
 
 
+                </div>
 
              </div><br>
              <button class="btn" (click)="addToCart(c)"><i class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp; Add to Bag</button>
@@ -127,8 +132,14 @@
                         {{c.pdescription}}
                            <br>
                            {{c.price | currency:'INR'}}<br>
-                           Quantity:
-                           <input type="number" name="quantity"  [(ngModel)]="quantity" style="width:50px;border-radius:10px ; text-align: center;" min="1" max="25">
+                           <!-- Quantity:
+                           <input type="number" name="quantity"  [(ngModel)]="quantity" style="width:50px;border-radius:10px ; text-align: center;" min="1" max="25"> -->
+                           <div>
+                            <p style="float: left; position:absolute;"> Quantity :</p>
+                            <app-counterchild (countEmmitter)="receiveValue($event)"></app-counterchild>
+
+
+                          </div>
 
 
                        </div><br>
