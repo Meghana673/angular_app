@@ -7,7 +7,25 @@ import { environment } from 'src/environments/environment';
 })
 export class UserService {
   public authSubject = new Subject<boolean>();
+  public adminSubject = new Subject<boolean>();
 
+validateAdmin(adminauth:boolean) {
+   
+    this.adminSubject.next(adminauth);
+  }
+
+  admvalue?:boolean;
+    getadminStatus(){
+    this.adminSubject.subscribe(
+      adminauth =>
+      {
+        console.log('inside user service: ' + adminauth);
+        this.value= adminauth;
+        console.log('inside user service 11: ' + this.admvalue);
+      }
+    );
+    return this.admvalue;
+  }
   validateAuth(data:boolean) {
 
     this.authSubject.next(data);

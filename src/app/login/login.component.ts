@@ -72,10 +72,31 @@ export class LoginComponent implements OnInit {
       if (this.loginForm.invalid) {
         return ;
       }
+      if("admin@gmail.com"=== this.loginForm.value.useremail && "admin123"=== this.loginForm.value.password)
+    {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+      })
+
+      Toast.fire({
+        icon: 'success',
+        title: 'welcome admin'
+      })
+      this.loginForm.reset();
+      this.router.navigate([''])
+      this.userService.validateAdmin(true);
+    }
+    else{
+
 
       this.http.get<any>(this.userapi)
       .subscribe(res=>{
         const user=res.find((a:any)=>{
+
           return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
         });
       //   if(user){
@@ -124,4 +145,4 @@ export class LoginComponent implements OnInit {
     })
   }
     }
-
+  }

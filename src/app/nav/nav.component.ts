@@ -9,6 +9,7 @@ import { UserService } from '../user.service';
 })
 export class NavComponent implements OnInit {
   auth:boolean=false;
+  admin:boolean=false;
 
   cartCount: number=0;
   constructor(private authService:UserService,private cartSvc:CartService) { }
@@ -21,6 +22,14 @@ export class NavComponent implements OnInit {
         this.auth = data;
       }
     );
+    this.authService.adminSubject.subscribe(
+      adminauth =>
+      {
+        console.log('auth inside nav component: ' + adminauth);
+        this.admin = adminauth;
+      }
+    );
+
     this.cartSvc.getCartItems().subscribe (
       (response) =>
        {
