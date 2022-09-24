@@ -50,6 +50,31 @@ export class CardsComponent implements OnInit {
     this.cartsvc.getCount();
   }
 
+  wish(product:any){
+    // this.cart.pname=product.pname;
+    // this.cart.pdescription=product.pdescription;
+    // this.cart.price=product.price;
+    // this.cart.img=product.img;
+    // this.cart.price=product.price;
+    // this.cart.totalPrice=product.totalPrice;
+    // this.cart.quantity=this.quantity;
+    // this.cart.pid=product.id;
+
+    console.log(product.id);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: 'You will be notified when product is back'
+    })
+
+  }
 
   productdetails=[
     {
