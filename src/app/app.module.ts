@@ -28,6 +28,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { AllproductComponent } from './allproduct/allproduct.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { TdealsComponent } from './tdeals/tdeals.component';
 
 
 
@@ -55,7 +56,8 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     RegisterComponent,
     LoginComponent,
     AllproductComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    TdealsComponent
 
 
   ],

@@ -1,5 +1,10 @@
-<div >
+<!-- <div >
     <p >Your product is {{pname}}</p>
+</div> -->
+
+
+<div class="search">
+
+  <input type="text" [(ngModel)]="enterval" (input)="onsearch()">&nbsp;&nbsp;
+  <button class="btn btn-dark" (click)="onsearch()">Search</button>
 </div>
-
-

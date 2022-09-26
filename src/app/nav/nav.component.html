@@ -10,7 +10,7 @@
             <a class="nav-link" aria-current="page" routerLink=" " >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="sales" *ngIf="auth">Sales</a>
+            <a class="nav-link" routerLink="sales" *ngIf="auth">Todays Deals</a>
           </li>
           <!-- *ngIf="auth" -->
           <li class="nav-item">
@@ -18,24 +18,26 @@
               Fashion</a>
 
           </li>
-          <li class="nav-item" *ngIf="auth">
-              <a class="nav-link" routerLink="men">Men</a>
-          </li>
 
           <li class="nav-item" *ngIf="auth">
             <a class="nav-link" routerLink="women">Women</a>
           </li>
+          <li class="nav-item" *ngIf="auth">
+              <a class="nav-link" routerLink="men">Men</a>
+          </li>
+
+
           <li class="nav-item" *ngIf="admin">
             <a class="nav-link" routerLink="products" >Products</a>
           </li>
 
           <li class="nav-item" *ngIf="!auth && !admin">
-            <a class="nav-link" routerLink="register" >Register</a>
+            <a class="nav-link" routerLink="register" >Signup/login</a>
           </li>
 
         </ul>
         <button routerLink='cart' style="border:none;" *ngIf="auth" >
-          <span class="fa-solid fa-bag-shopping" style="font-size:20px; "><sup class="text-dark" style="font-size: 11px; margin-left: 2px; color: blue;">{{cartCount}}</sup></span>
+          <span class="fa-solid fa-bag-shopping" style="font-size:20px; "><sup  style="font-size: 11px; margin-left: 2px; color: rgb(194, 118, 218);">{{cartCount}}</sup></span>
         </button> &nbsp;&nbsp;&nbsp;
         <form class="d-flex" *ngIf="!auth && !admin">
           <input class="form-control me-2" type="search" #productname placeholder="Search" aria-label="Search">

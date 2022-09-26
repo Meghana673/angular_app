@@ -48,7 +48,7 @@
 <div class="mt-5">
   <div class="col-md-12 min-vh-100 d-flex flex-column">
       <div class="login-form">
-          <form class="mt-5"  [formGroup]="registerForm"  (ngSubmit)=" submitHandler()" >
+          <form class="mt-5"  [formGroup]="registerForm" novalidate (ngSubmit)=" submitHandler()" >
               <h2 class="text-center secondary ms-mb-m main-heading ng-binding" style="font-family: cursive; font-weight:bold;">Signup</h2>
               <br>
               <div class="form-group">

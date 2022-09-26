@@ -10,7 +10,7 @@ export class UserService {
   public adminSubject = new Subject<boolean>();
 
 validateAdmin(adminauth:boolean) {
-   
+
     this.adminSubject.next(adminauth);
   }
 
@@ -30,7 +30,7 @@ validateAdmin(adminauth:boolean) {
 
     this.authSubject.next(data);
   }
-  // hosturl=environment.userapi;
+  
 
   value?:boolean;
     getAuthStatus(){

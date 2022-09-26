@@ -1,9 +1,9 @@
  <div class="container">
   <div class="row" >
   <div class="col col-3 col-md-4 mt-4 col-sm-4"*ngFor="let products of productdetails" [ngSwitch]="products.Status">
-    <div class="card" style="width: 16rem; height: 32rem;">
+    <div class="card" style="width: 16rem; height: 30rem;">
 
-      <img src="{{products.img}}" class="card-img-top"  height="260px" >
+      <img src="{{products.img}}" class="card-img-top"  height="230px" >
       <div class="card-body" *ngSwitchCase="'In Stock'">
       <h5 class="card-title">{{products.pname}}</h5>
 

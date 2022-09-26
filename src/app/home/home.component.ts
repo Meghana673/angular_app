@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   img1="assets/c3.jpg";
   img2="assets/c2.jpg";
   img3="assets/c1.jpg";
+  img4="assets/poster.jpg";
 
 
   names="john";

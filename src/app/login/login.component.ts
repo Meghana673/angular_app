@@ -87,7 +87,7 @@ export class LoginComponent implements OnInit {
         title: 'welcome admin'
       })
       this.loginForm.reset();
-      this.router.navigate([''])
+      this.router.navigate([' '])
       this.userService.validateAdmin(true);
     }
     else{
@@ -125,7 +125,7 @@ export class LoginComponent implements OnInit {
           title: 'Login Successful'
         })
         this.loginForm.reset();
-        this.router.navigate([''])
+        this.router.navigate([' '])
         this.userService.validateAuth(true);
       }else{
         const Toast = Swal.mixin({
